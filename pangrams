@@ -1,0 +1,14 @@
+
+function checkPangram(str) {
+
+    var chars = "abcdefghijklmnopqrstuvwxyz";
+    str = str.toLowerCase();
+    
+    for (var i = 0; i < chars.length; i++) {
+         if (!str.includes(chars[i])) {
+              return "Not Pangram";
+        }
+      }
+      return "Pangram";
+}
+console.log(checkPangram("We promptly judged antique ivory buckles for the next prize"));
